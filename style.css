@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* COLOURS */
+
+.bg-black {
+  background-color: black;
+}
+
+body {
+  position: relative;
+}
+
+.card-skills {
+  border-radius: 0;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+/* DEFAULT FONT SIZE */
+body {
+  font-size: 1.4rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.lead {
+  font-size: 1.6rem;
+}
+
+/* WIDTH AND HEIGHT */
+
+.section {
+  min-height: 55rem;
+}
+
+/* BACKGROUND IMAGES */
+
+.contact-image {
+  background-image: url("./imgs/contact-background.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.75;
+  display: block;
+  max-width: 100%;
+  height: 25rem;
+}
+
+.splash-image {
+  background-image: url("./imgs/spash-background.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.75;
+  max-width: 100%;
+  height: 55rem;
+}
+
+
+
+/* FLIP CARDS */
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+
+.flip-card {
+  background-color: transparent;
+  height: 25rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* BACK TO TOP */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #E1AD01;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}
